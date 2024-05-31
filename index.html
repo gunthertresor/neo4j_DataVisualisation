@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>DataViz</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/neovis.js@2.0.2"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+	  <script src="jquery.min.js"></script>		<!-- lib required from touch.js -->
+    <script src="robotutils.js"></script> 		<!-- handles connection to naoqi api -->
+    <script src="https://kit.fontawesome.com/e5851697ec.js" crossorigin="anonymous"></script>
+    <script src="touch.js"></script>			<!-- inlcudes functions to handle touch events and sync with choregraphe -->
+    <title>Pepper Robot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+</head>
+<body onload="draw()">
+  <div class="header has-text-centered">
+    <h1><strong>Data Visualization</strong></h1>
+  </div>
+  <div class="container">
+    <div id="viz" class="m-auto has-text-centered"></div>
+
+<br>
+<div class="field">
+  <label class="label">Cypher query</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea" id="cypher"></textarea>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link" id="queryBtn">Submit</button>
+  </div>
+</div>
+</div>
+<br>
+
+<br>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      This Project was made with <i class="fa-solid fa-heart"></i> by <strong>Günther</strong>
+    </p>
+  </div>
+</footer>
+</body>
+<script type="text/javascript" src="queryBtn.js"></script>
+</html>
