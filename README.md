@@ -14,7 +14,7 @@
  <br>
  #
  ### Install
-Neovis.js can be installed via npm:
+Neovis.js can be installed via npm:<br>
 npm install --save neovis.js
 <br>
 #
